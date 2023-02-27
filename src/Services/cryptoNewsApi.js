@@ -5,7 +5,7 @@ const cryptoNewsHeaders = {
   "X-RapidAPI-Host": import.meta.env.VITE_RAPIDAPI_HOST,
 };
 
-const baseUrl = "https://crypto-news16.p.rapidapi.com";
+const baseUrl = import.meta.env.VITE_NEWS_API_URL;
 
 const createRequest = (url) => ({ url, headers: cryptoNewsHeaders });
 

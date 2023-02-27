@@ -4,7 +4,7 @@ const cryptoApiHeaders = {
   "X-RapidAPI-Host": import.meta.env.VITE_CRYPTO_RAPIDAPI_HOST,
 };
 
-const baseUrl = "https://coinranking1.p.rapidapi.com";
+const baseUrl = import.meta.env.VITE_CRYPTO_API_URL;
 
 const createRequest = (url) => ({ url, headers: cryptoApiHeaders });
 
